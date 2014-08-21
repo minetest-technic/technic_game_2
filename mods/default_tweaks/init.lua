@@ -102,3 +102,9 @@ minetest.register_node(":default:desert_cobble", {
 	groups = {cracky=3, stone=2},
 	sounds = default.node_sound_stone_defaults(),
 })
+
+minetest.register_craft({
+	type = "cooking",
+	output = "default:desert_stone",
+	recipe = "default:desert_cobble",
+})
